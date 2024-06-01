@@ -1,0 +1,220 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+body
+{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background: #272829;
+  margin-top: 7%;
+}
+
+#clock
+{
+  position: relative;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 80px;
+  
+  
+}
+
+#hrDots,
+#minDots,
+#secDots
+{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  rotate: 90deg;
+  backdrop-filter: blur(6px);
+
+  
+  
+}
+
+#hrDots::before,
+#minDots::before,
+#secDots::before
+{
+content: '';
+position: absolute;
+inset: -20px;
+border-radius: 45%;
+box-shadow: 25px 25px 75px rgba(24, 222, 40, 0.3),
+10px 10px 70px rgba(19, 226, 181, 0.9),
+inset 5px 5px 10px rgba(26, 237, 213, 0.5),
+inset 5px 5px 20px rgba(5, 243, 243, 0.347),
+inset -5px -5px 15px rgba(1, 255, 255, 0.76)
+
+;
+}
+
+#hrDots h1,
+#minDots h1,
+#secDots h1
+{
+  position: absolute;
+  text-align: center;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr);
+  font-size: 77px;
+  rotate: -90deg;
+  
+}
+
+
+#secDots b,
+#hrDots b
+{
+    backdrop-filter: blur(6px);
+  position: absolute;
+  color: rgb(255, 255, 255);
+  display: inline-flex;
+  transform: rotate(-90deg) translate(-30px,90px);
+
+}
+#minDots b
+{
+  backdrop-filter: blur(6px);
+  margin-top: 12%;
+  margin-right: -2000%;
+  padding: 20%;
+  /* background-color: rgb(43, 43, 41); */
+  box-shadow: 25px 25px 75px rgba(24, 222, 40, 0.3),
+  10px 10px 70px rgba(16, 232, 228, 0.9),
+  inset 5px 5px 10px rgba(26, 237, 213, 0.5),
+  inset 5px 5px 20px rgba(5, 243, 243, 0.347),
+  inset -5px -5px 15px rgba(1, 255, 255, 0.76);
+  border-radius: 1%;
+  font-size: 67px;
+  position: relative;
+  color: var(--clr);
+  display: inline-flex;
+  transform: rotate(-90deg) translate(-30px,90px);
+}
+
+#secDots .dot,
+#minDots .dot,
+#hrDots .dot
+{
+  
+  position: absolute;
+  align-items: center;
+  margin: -4px 0px 0px 0px;
+  top: 50%;
+  width: 12px;
+  height: 6px;
+  background: var(--clr);
+  transform-origin: 100px;
+  
+ 
+}
+
+#secDots .active.dot,
+#hrDots .active.dot,
+#minDots .active.dot
+
+{
+  background: var(--clr);
+  box-shadow: 0 0 10px var(--clr),
+  0 0 20px var(--clr),
+  0 0 30px var(--clr);
+  
+}
+
+#secDots .active.dot~.dot,
+#minDots .active.dot~.dot,
+#hrDots .active.dot~.dot
+{
+  background: #7c7c7e;
+ 
+}
+
+#secDots .dot:nth-child(5n + 5),
+#minDots .dot:nth-child(5n + 5),
+#hrDots .dot:nth-child(5n+ 5)
+{
+  width: 21px;
+}
+
+
+
+/* .aa
+{
+  background-color: #2e2e95;
+ 
+  text-align: center;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr);
+  font-size: 77px;
+} */
+/* #days
+{
+  position: relative;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 80px;
+  
+  
+} */
+
+/* #day h1,
+#date h1
+{
+  position: absolute;
+  text-align: center;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr);
+  font-size: 77px;
+} */
+
+
+/* 
+#background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+
+}
+ */
