@@ -20,6 +20,7 @@ body, html {
   background-size: cover;
   background-position: center;
   transition: background-image 1s ease-in-out;
+  border-width: 20px;
 }
 
 body
@@ -29,7 +30,6 @@ body
   align-items: center;
   min-height: 60vh;
   background: #272829;
-  margin-top: 7%;
 }
 
 #clock
@@ -39,8 +39,6 @@ body
   justify-items: center;
   align-items: center;
   gap: 80px;
-  
-  
 }
 
 #hrDots,
@@ -52,10 +50,6 @@ body
   height: 200px;
   border-radius: 50%;
   rotate: 90deg;
-  backdrop-filter: blur(6px);
-
-  
-  
 }
 
 #hrDots::before,
@@ -70,9 +64,7 @@ box-shadow: 25px 25px 75px rgba(24, 222, 40, 0.3),
 10px 10px 70px rgba(19, 226, 181, 0.9),
 inset 5px 5px 10px rgba(26, 237, 213, 0.5),
 inset 5px 5px 20px rgba(5, 243, 243, 0.347),
-inset -5px -5px 15px rgba(1, 255, 255, 0.76)
-
-;
+inset -5px -5px 15px rgba(1, 255, 255, 0.76);
 }
 
 #hrDots h1,
@@ -88,35 +80,29 @@ inset -5px -5px 15px rgba(1, 255, 255, 0.76)
   color: var(--clr);
   font-size: 77px;
   rotate: -90deg;
-  
 }
 
 
 #secDots b,
 #hrDots b
 {
-    backdrop-filter: blur(6px);
   position: absolute;
   color: rgb(255, 255, 255);
   display: inline-flex;
   transform: rotate(-90deg) translate(-30px,90px);
-
 }
 #minDots b
 {
   backdrop-filter: blur(6px);
-  margin-top: 12%;
-  margin-right: -2000%;
+  margin-right: -300%;
   padding: 20%;
-  /* background-color: rgb(43, 43, 41); */
   box-shadow: 25px 25px 75px rgba(24, 222, 40, 0.3),
   10px 10px 70px rgba(16, 232, 228, 0.9),
   inset 5px 5px 10px rgba(26, 237, 213, 0.5),
   inset 5px 5px 20px rgba(5, 243, 243, 0.347),
   inset -5px -5px 15px rgba(1, 255, 255, 0.76);
-  border-radius: 1%;
-  font-size: 67px;
-  position: relative;
+  border-radius: 15px;
+  font-size: 50px;
   color: var(--clr);
   display: inline-flex;
   transform: rotate(-90deg) translate(-30px,90px);
@@ -135,8 +121,6 @@ inset -5px -5px 15px rgba(1, 255, 255, 0.76)
   height: 6px;
   background: var(--clr);
   transform-origin: 100px;
-  
- 
 }
 
 #secDots .active.dot,
@@ -165,56 +149,3 @@ inset -5px -5px 15px rgba(1, 255, 255, 0.76)
 {
   width: 21px;
 }
-
-
-
-/* .aa
-{
-  background-color: #2e2e95;
- 
-  text-align: center;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--clr);
-  font-size: 77px;
-} */
-/* #days
-{
-  position: relative;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  gap: 80px;
-  
-  
-} */
-
-/* #day h1,
-#date h1
-{
-  position: absolute;
-  text-align: center;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--clr);
-  font-size: 77px;
-} */
-
-
-/* 
-#background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  transition: background-image 1s ease-in-out;
-
-}
- */
